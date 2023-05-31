@@ -1,0 +1,60 @@
+<form>
+
+  <div class="form-group">
+    <label>Title: </label>
+    <input type="text" [(ngModel)]="title" [ngModelOptions]="{standalone: true}" class="form-control" id="title">
+
+      <label>Author: </label>
+      <input type="text" [(ngModel)]="author" [ngModelOptions]="{standalone: true}" class="form-control" id="author">
+
+      <label>Summary: </label>
+      <input type="text" [(ngModel)]="summary" [ngModelOptions]="{standalone: true}" class="form-control" id="summary" size="50"> 
+
+      <br>
+      <label>Report: </label>
+      <input type="text" [(ngModel)]="report" [ngModelOptions]="{standalone: true}" class="form-control" id="report" size="80"> 
+
+      <label>Fixes: </label>
+      <input type="text" [(ngModel)]="fixes" [ngModelOptions]="{standalone: true}" class="form-control" id="fixes" size="75">
+
+    </div>
+  <button class="buttons" class="btn btn-primary mt-4" (click)="save()" >Save</button>
+</form>
+
+<tbody>
+  <tr *ngFor="let IssueReports of IssueReportArray">
+  
+<mat-card class="card-class">
+    <mat-card-header class="card-head" >
+      {{IssueReports.title}}
+    </mat-card-header>
+    <mat-list class="card-list">
+      <mat-list-item class="card-item">
+        <span matListItemTitle class="card-label">Summary:</span> 
+        <span class="card-report-author" matListItemLine>Author: {{IssueReports.author}}</span>
+        <p class="card-summary">{{IssueReports.summary}}</p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="card-item">
+        <span matListItemTitle class="card-label">Report:</span>
+        <span class="card-report-time" matListItemLine>Date of the report: 4/20/2023</span>
+        <p class="card-report">{{IssueReports.report}}</p>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item class="card-item">
+        <span matListItemTitle class="card-label">Fixes:</span>
+        <span class="card-fix-time" matListItemLine>Date of the Fix: 4/28/2023</span>
+        <p class="card-fix">{{IssueReports.fixes}}</p>
+      </mat-list-item>
+    </mat-list>
+    <div class="card-buttons">
+      <button class="buttons" (click)="setUpdate(IssueReports)">Edit</button>
+      <button class="buttons" (click)="setDelete(IssueReports)">Delete</button>
+    </div>
+  </mat-card>
+  
+  
+</tr>
+</tbody>
+
+ 

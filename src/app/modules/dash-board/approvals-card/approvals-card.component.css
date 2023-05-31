@@ -1,0 +1,61 @@
+* {
+    background-color: rgb(238, 238, 238);
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    background-size:contain;
+    background: transparent;
+    align-content: left;
+}
+
+.example-header-image {
+    width: 100%;
+    display: block;
+    background-size: cover;
+}
+
+.appcard{
+    margin: 2%;
+    width: 93%;
+    text-align: left;
+    float: left;
+}
+
+.Approvals-tittle{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -5px;
+    color: rgb(22, 22, 22);
+    background: rgb(145,255,144);
+    background: linear-gradient(120deg, rgba(145,255,144,1) 0%, rgba(39,84,179,1) 50%, rgba(145,255,144,1) 100%);
+}
+
+.appcard .head{
+    font-size: 17px;
+    font-weight: normal;
+    padding-bottom: 14px;
+    background: rgb(145,255,144);
+    background: linear-gradient(120deg, rgba(145,255,144,1) 0%, rgba(39,84,179,1) 50%);
+    color: black;
+}
+
+.appcard .applist .appitem{
+    width: 100%;
+    height: 100%;
+}
+
+.appcard .applist .applabel{
+    color: darkred;
+}
+
+.appcard .applist .appitem .appbody{
+    padding-bottom: 10px;
+    overflow-y: auto;
+    color: black;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+}

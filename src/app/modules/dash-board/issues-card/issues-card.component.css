@@ -1,0 +1,98 @@
+img {
+    width: 30px;
+    height: 30px;
+    background-size:contain;
+    background: transparent;
+    align-content: left;
+}
+
+.example-header-image {
+    width: 100%;
+    display: block;
+    background-size: cover;
+}
+
+.card-class{
+    margin: 2%;
+    width: 93%;
+    text-align: left;
+    float: left;
+   
+}
+
+.Issues-tittle{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -5px;
+    color: rgb(22, 22, 22);
+    background: rgb(145,255,144);
+    background: linear-gradient(120deg, rgba(145,255,144,1) 0%, rgba(39,84,179,1) 50%, rgba(145,255,144,1) 100%);
+}
+
+.card-class .card-head{
+    font-size: 17px;
+    font-weight: normal;
+    padding-bottom: 14px;
+    background: rgb(145,255,144);
+    background: linear-gradient(120deg, rgba(145,255,144,1) 0%, rgba(39,84,179,1) 50%);
+    color: black;
+}
+
+.card-class .card-list .card-item{
+    width: 100%;
+    height: 100%;
+}
+
+.card-class .card-list .card-label{
+    color: darkred;
+}
+
+.card-class .card-list .card-item p{
+    padding-bottom: 10px;
+    overflow-y: auto;
+    color: black;
+}
+
+input{
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+}
+
+label{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+button{
+    width: 60px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    border-radius: 4px;
+    background-color: rgb(243, 240, 240);
+}
+
+button:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+form{
+    background-color: rgb(215, 211, 211);
+}
+
+.card-class{
+    position: relative;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 35px;
+    left: 0px;
+    right: 0px;
+    width: 480%;
+}
+
+.card-buttons{
+    background-color: rgb(215, 211, 211);
+    height: fit-content;
+}
